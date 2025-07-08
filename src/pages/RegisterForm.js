@@ -30,7 +30,7 @@ function RegisterForm() {
       <div className="form-group">
         <label>Tên đăng nhập</label>
         <input {...register('username')} /> {/* Sử dụng register để kết nối input với react-hook-form */}
-        {errors.username && <p className="error">{errors.username.message}</p>}   {/* Hiển thị lỗi nếu có */}
+        {errors.username && <p className="error">{errors.username.message}</p>}  
       </div>
       <div className="form-group">
         <label>Email</label>
