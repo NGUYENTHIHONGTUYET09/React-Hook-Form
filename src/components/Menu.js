@@ -4,7 +4,7 @@ import './Menu.css';
 
 function Menu() {
   return (
-    <nav className="menu"> //f
+    <nav className="menu">  
       <ul>
         <li><Link to="/">Đăng ký</Link></li>
         <li><Link to="/result">Kết quả</Link></li>

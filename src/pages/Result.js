@@ -1,10 +1,10 @@
 import React from 'react';
 
 function Result() {
-  const data = JSON.parse(localStorage.getItem('formData'));
+  const data = JSON.parse(localStorage.getItem('formData')); // Lấy dữ liệu từ localStorage và chuyển đổi từ chuỗi JSON về đối tượng
 
   if (!data) {
-    return <div>Không có dữ liệu. Vui lòng đăng ký trước.</div>;
+    return <div>Không có dữ liệu. Vui lòng đăng ký trước.</div>; 
   }
 
   return (

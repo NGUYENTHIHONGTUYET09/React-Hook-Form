@@ -1,19 +1,19 @@
 body {
   font-family: Arial, sans-serif;
-  background: #f5f5f5;
+  background: linear-gradient(135deg, #0b5354, #31a7af, #06353b); /* nền vũ trụ */
   margin: 0;
   padding: 0;
 }
 .App {
   max-width: 500px;
   margin: 40px auto;
-  background: #d5e8f6;
+  background: linear-gradient(135deg, #84daff, #a8b4a9, #8bf1ff);  
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   padding-bottom: 20px;
 }
 .menu {
-  background: hsl(228, 97%, 61%);
+  background: linear-gradient(135deg, #e15ecf, #8ee095, #8bdcff);  
   padding: 10px 0;
   border-radius: 8px 8px 0 0;
 }
@@ -28,7 +28,7 @@ body {
   margin: 0 15px;
 }
 .menu a {
-  color: #181717;
+  color: #141714;
   text-decoration: none;
   font-weight: bold;
 }
@@ -52,7 +52,7 @@ body {
 }
 .form-group input {
   padding: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #ffffff;
   border-radius: 4px;
 }
 .error {
@@ -61,8 +61,8 @@ body {
   margin-top: 2px;
 }
 button[type="submit"] {
-  background: #1976d2;
-  color: #fff;
+  background: linear-gradient(135deg, #7d5ee1, #e0ba8e, #a68bff); /* nền vũ trụ */
+  color: #ffffff;
   border: none;
   padding: 10px 0;
   border-radius: 4px;
@@ -71,7 +71,7 @@ button[type="submit"] {
   margin-top: 8px;
 }
 button[type="submit"]:hover {
-  background: #1565c0;
+  background: linear-gradient(135deg, #0eff5e, #9c8ee0, #8bdcff); /* nền vũ trụ */
 }
 .result {
   padding: 16px;

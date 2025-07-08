@@ -35,3 +35,99 @@ Sau khi làm ra dự án thì chạy nó bằng lệnh:
 	npx react-scripts start
 	Sau khi chạy oce thì run bằng -> npm start
  
+
+ // push git 
+ Dưới đây là **tổng hợp đầy đủ các bước** để bạn:
+
+> ✅ Tạo nhánh mới
+> ✅ Sửa lỗi repo lồng nhau (nếu có)
+> ✅ Kết nối remote GitHub
+> ✅ Commit & Push code lên GitHub
+
+---
+
+## 🚀 BƯỚC 1: Kiểm tra thư mục và vào đúng project
+
+```bash
+cd E:/PNJ_intern_2025/practice_code/Menu_SignUp
+```
+
+---
+
+## 🚀 BƯỚC 2: Tạo nhánh mới
+
+```bash
+git checkout -b signup
+```
+
+📌 `signup` là tên nhánh mới. Bạn có thể thay tên theo mục đích như `feature/signup-form`.
+
+---
+
+## 🚀 BƯỚC 3: Sửa lỗi nếu lỡ clone repo khác vào trong thư mục
+
+Nếu bạn có thư mục con như `React_intern_new` bị git hiểu nhầm là repo con (submodule):
+
+```bash
+git rm --cached -r React_intern_new
+rm -rf React_intern_new                # Xóa luôn nếu không cần
+git commit -m "fix: xóa repo con bị add nhầm"
+```
+
+---
+
+## 🚀 BƯỚC 4: Kiểm tra hoặc thêm remote GitHub
+
+```bash
+git remote -v         # kiểm tra đã có chưa
+```
+
+Nếu chưa có, hãy thêm:
+
+```bash
+git remote add origin https://github.com/NGUYENTHIHONGTUYET09/React_intern.git
+```
+
+---
+
+## 🚀 BƯỚC 5: Add, commit và push code lên GitHub
+
+```bash
+git add .
+git commit -m "feat: thêm form đăng ký sử dụng react-hook-form"
+git push -u origin signup
+```
+
+> `-u` giúp tự động thiết lập theo dõi nhánh `signup` với GitHub remote.
+
+---
+
+## 🧪 BƯỚC 6: Kiểm tra kết quả
+
+1. Truy cập GitHub:
+   👉 [https://github.com/NGUYENTHIHONGTUYET09/React\_intern](https://github.com/NGUYENTHIHONGTUYET09/React_intern)
+
+2. Chọn nhánh `signup` ở góc trên trái (`main ⏷` → chọn `signup`)
+
+
+## ✅ Tổng kết nhanh
+
+| Mục tiêu         | Lệnh                           |
+| ---------------- | ------------------------------ |
+| Tạo nhánh mới    | `git checkout -b signup`       |
+| Thêm file        | `git add .`                    |
+| Commit           | `git commit -m "..."`          |
+| Push nhánh mới   | `git push -u origin signup`    |
+| Thêm remote      | `git remote add origin <URL>`  |
+| Sửa lỗi repo con | `git rm --cached -r <thư-mục>` |
+
+
+
+----- flow hoạt động: -----
+Người dùng mở trang → thấy menu
+Chọn “Đăng ký” → nhập form
+Form sẽ:
+Kiểm tra các trường (bắt buộc, định dạng, độ dài)
+Hiển thị lỗi ngay nếu sai 
+Nếu đúng → submit → lưu vào localStorage → chuyển sang /result
+Trang Result đọc và hiển thị lại dữ liệu đã nhập
