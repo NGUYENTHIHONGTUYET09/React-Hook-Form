@@ -6,7 +6,7 @@ import * as yup from 'yup'; // Thư viện yup để định nghĩa schema xác 
 import { useNavigate } from 'react-router-dom'; // Thư viện react-router-dom để điều hướng giữa các trang và lấy dữ liệu từ localStorage
 
 const schema = yup.object().shape({ // Định nghĩa schema xác thực với yup
-  username: yup.string().uname('Không được để trống tên đăng nhập').required('Vui lòng nhập tên đăng nhập'),
+  username: yup.string().required('Vui lòng nhập tên đăng nhập'),
   email: yup.string().email('Email không hợp lệ').required('Vui lòng nhập email'),
   password: yup.string().min(6, 'Mật khẩu tối thiểu 6 ký tự').required('Vui lòng nhập mật khẩu'),
 });
